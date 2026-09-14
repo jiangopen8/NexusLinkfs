@@ -1,0 +1,46 @@
+{
+  "name": "ipfs-storage-network",
+  "version": "1.0.0",
+  "description": "IPFS distributed storage network with ACP protocol",
+  "type": "module",
+  "main": "scripts/cli.js",
+  "bin": {
+    "ipfs-net": "scripts/cli-plugin.js",
+    "ipfs-storage": "scripts/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node scripts/cli.js --help"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "packageManager": "pnpm@10.34.5",
+  "dependencies": {
+    "@chainsafe/libp2p-gossipsub": "^14.1.2",
+    "@chainsafe/libp2p-yamux": "^8.0.1",
+    "@libp2p/crypto": "^5.1.22",
+    "@libp2p/floodsub": "^11.0.28",
+    "@libp2p/identify": "^4.1.12",
+    "@libp2p/interface": "^3.2.5",
+    "@libp2p/kad-dht": "^16.4.3",
+    "@libp2p/mplex": "^12.0.29",
+    "@libp2p/noise": "^1.0.1",
+    "@libp2p/peer-id": "^6.0.14",
+    "@libp2p/tcp": "^11.0.26",
+    "@libp2p/websockets": "^10.1.19",
+    "@multiformats/multiaddr": "^13.0.3",
+    "chalk": "^6.0.0",
+    "commander": "^15.0.0",
+    "crypto-js": "^4.2.0",
+    "fs-extra": "^11.4.0",
+    "it-length-prefixed": "^11.0.1",
+    "it-pipe": "^3.0.1",
+    "libp2p": "^3.3.8",
+    "multiformats": "^14.0.5",
+    "ora": "^9.4.1",
+    "ws": "^8.21.3"
+  }
+}
